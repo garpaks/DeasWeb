@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+}
+
+body {
+  background-color: black;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(1, 30% 70%);
+  align-items: center;
+}
+
+#imgLogo {
+  width: 80%;
+  transition: width 0.5s ease;
+}
+
+#imgLogo:hover {
+  width: 75%;
+}
+
+#logoCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  padding: 0 0 0 5em;
+}
+
+#titulosNav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.tituloNav {
+  text-decoration: none;
+  font-size: clamp(0.5em, 1.8vw, 1.6em);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  transition-duration: 0.2s linear;
+}
+
+.tituloNav:hover {
+  border-bottom: 4px solid white;
+  transition: border-bottom 0.1s linear;
+}
+
+#llamanos {
+  border: solid;
+  padding: 0.4em;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+#llamanos:hover {
+  background-color: white;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sliderInner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: all 0.4s ease-in;
+}
+
+.imagenPNG {
+  width: 100%;
+  /* height: 80vh; */
+}
+
+#quienesSomosCOSEC {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#textoTituloQuienes {
+  font-size: 10em;
+  font-style: italic;
+}
+
+#textoTituloProyectos {
+  font-size: 9em;
+  font-style: italic;
+}
+
+#quienesSomosImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+#qspng {
+  object-fit: cover;
+  width: 80%;
+}
+
+#lineaVerticalCO {
+  height: 100%;
+  border-left: 1em solid white;
+}
+
+#lineaVertical {
+  width: auto;
+}
+
+#textoQS {
+  font-size: 2.4em;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.7em;
+  font-style: italic;
+  text-align: justify;
+  border-left: 1rem solid white;
+  padding: 0 0 0 0.5em;
+  width: 80vw;
+}
+
+#equipoAma {
+  opacity: 0.6;
+}
+#somosPieza {
+  opacity: 0.8;
+}
+
+#proyectosTituloCo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#tituloCO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 50vw;
+  height: 50vh;
+}
+
+#ppng {
+  object-fit: fixed;
+  width: 100%;
+}
+
+
+#contenedorParallax {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+  margin: 0 0em 0 0em;
+}
+
+.parallax {
+  background: #0c0b0b fixed no-repeat 100% 100%;
+  background-size: 50% 100%;
+}
+
+.noParallax {
+  background: #0c0b0b;
+}
+
+#seccion1 {
+  background-image: url(img/data/batman.png);
+}
+
+#seccion2 {
+  background-image: url(img/data/houseofdragons.png);
+}
+
+#seccion3 {
+  background-image: url(img/data/secretsofdumbledore.png);
+}
+
+.infoProyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10em;
+  background-color: #0c0b0b;
+  gap: 5em;
+}
+
+.verMas {
+  font-size: 4em;
+  font-style: italic;
+  background-color: #0c0b0b;
+  padding: 0.2em;
+}
+
+.logoBatman,
+.logoSecrets,
+.logoHouse {
+  position: cover;
+  background-color: #0c0b0b;
+}
+
+.letraMas {
+  text-decoration: none;
+  border: solid;
+  padding: 0.2em;
+  transition: background-color 0.1s linear;
+}
+
+.letraMas:hover {
+  color: black;
+  background-color: white;
+}
+
+#verMasProyectos {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 5em;
+}
+
+.verMasProyectosText {
+  font-size: 3em;
+  font-style: italic;
+  padding: 0.2em;
+}
+
+#serviciosCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 8rem;
+  height: 100%;
+}
+
+#tituloServicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+
+#textoConstruimosTitulo {
+  font-size: 13em;
+  font-style: italic;
+}
+
+.sumaryTitulo {
+  font-size: 8em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  padding: 2em;
+  border-bottom: solid rgb(255, 255, 255, 0.2);
+  transition: border-bottom 0.2s ease;
+}
+
+summary:hover {
+  border-bottom: solid rgb(255, 255, 255);
+}
+
+#servicios {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  gap: 2em;
+}
+
+.letrasServicios {
+  object-fit: cover;
+}
+
+.textoServicios {
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  padding: 2em;
+}
+
+#tituloClientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  font-style: italic;
+}
+
+#bodyy {
+  height: 50%;
+  display: grid;
+  place-items: center;
+  margin: 3em 0 0 0;
+}
+
+#seccionvideo {
+  display: grid;
+  place-items: center;
+  height: auto;
+}
+
+#sliderr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 4px 30px rgba(255, 254, 254, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.sliderrItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(53%);
+  }
+
+  100% {
+    transform: translateX(-55%);
+  }
+}
+
+.sliderrItems img {
+  max-width: 20%;
+  margin: 20px;
+}
+.sliderrItems img:nth-child(1) {
+  width: 11%;
+}
+.sliderrItems img:nth-child(10) {
+  width: 15%;
+}
+.sliderrItems img:nth-child(11) {
+  width: 7%;
+}
+
+#llamanosCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 3em 0 0 0;
+  gap: 5em;
+}
+
+#textoLlamanosTitulo{
+  font-size: 11em;
+  font-style: italic;
+}
+
+#cdmxCont {
+  width: 20%;
+}
+
+#enviaTitulo {
+  font-style: italic;
+  font-size: 3em;
+}
+
+#mailTelefonoCONT {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+.correo,
+.WhatsApplink,
+.telefono {
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+  color: rgb(255, 255, 255, 0.8);
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border: solid white;
+  padding: 0.5em;
+}
+
+.linkContacto,
+.linkWa {
+  text-decoration: none;
+}
+
+.correo:hover,
+.telefono:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+.WhatsApplink:hover {
+  color: rgba(56, 212, 35, 0.8);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#arriba {
+  display: flex;
+  align-self: end;
+  justify-self: end;
+  width: 5%;
+  margin: 0 0.3em 0 0.2em;
+}
+#arriba a {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+#arriba img {
+  width: 100%;
+}
+
+#iconosRedesCont {
+  width: 10%;
+  display: flex;
+  padding: 0 0 0 0.2em;
+}
+
+#formularioCont {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+form {
+  width: 80%;
+}
+
+input,
+textarea {
+  font-size: 2em;
+  width: 100%;
+  background-color: black;
+  padding: 0.5em;
+  font-style: italic;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.3s linear;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: white solid 1px;
+}
+
+#contButton {
+  padding: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  display: flex;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 2em;
+  background-color: black;
+  width: 30%;
+  cursor: not-allowed;
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
