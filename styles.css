@@ -1,0 +1,1149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(1, 30% 68%);
+  align-items: center;
+}
+
+#imgLogo {
+  width: 100%;
+  transition: width 0.5s ease;
+}
+
+#imgLogo:hover {
+  width: 95%;
+}
+
+#logoCont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 17vh;
+  width: 70%;
+  margin: 0 0 0 2em;
+}
+
+#titulosNav {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5em;
+}
+
+.tituloNav {
+  text-decoration: none;
+  font-size: clamp(0.5em, 1.8vw, 1.6em);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  transition-duration: 0.2s linear;
+  text-align: center;
+}
+
+.tituloNav:hover {
+  color: white;
+  border-bottom: 4px solid white;
+  transition: all 0.2s ease;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+#llamanos {
+  border: solid;
+  padding: 0.4em;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+#llamanos:hover {
+  background-color: white;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: 999;
+  background-color: rgb(0, 0, 0, 1);
+  /* backdrop-filter: blur(25px); */
+  box-shadow: -10px 0 10px rgb(255, 255, 255);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  gap: 2em;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: auto;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menuButton {
+  display: none;
+}
+.slider-box {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 600%;
+  animation: slide 25s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.slider-box img {
+  width: 100%;
+  object-fit: cover;
+  height: 90vh;
+}
+
+@keyframes slide {
+  0%,
+  12.5% {
+    margin-left: 0;
+  }
+  16.66%,
+  29.16% {
+    margin-left: -100%;
+  }
+  33.32%,
+  45.82% {
+    margin-left: -200%;
+  }
+  49.98%,
+  62.48% {
+    margin-left: -300%;
+  }
+  66.64%,
+  79.14% {
+    margin-left: -400%;
+  }
+  83.3%,
+  87.49% {
+    margin-left: -500%;
+  }
+  87.5%,
+  100% {
+    margin-left: -500%;
+  }
+}
+
+#quienesSomosCOSEC {
+  width: 100%;
+  height: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+#textoTituloQuienes {
+  font-size: 7em;
+  font-style: italic;
+  text-align: center;
+}
+
+#textoTituloProyectos {
+  font-size: 7em;
+  font-style: italic;
+}
+
+#quienesSomosImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+
+#qspng {
+  object-fit: cover;
+  width: 80%;
+}
+
+#lineaVerticalCO {
+  border-left: 0.1em solid white;
+  height: auto;
+}
+
+#lineaVertical {
+  width: auto;
+}
+
+#textoQS {
+  font-size: 2em;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  font-style: italic;
+  text-align: justify;
+  border-left: 1rem solid white;
+  padding: 0 0 0 0.5em;
+  width: auto;
+  height: auto;
+  margin: 0 10em 0 10em;
+}
+
+#equipoAma {
+  opacity: 0.6;
+}
+#somosPieza {
+  opacity: 0.8;
+}
+
+#proyectosTituloCo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+#tituloCO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 50vw;
+  height: 50vh;
+}
+
+#ppng {
+  object-fit: fixed;
+  width: 100%;
+}
+
+#contenedorParallax {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.parallax {
+  background: #0c0b0b fixed no-repeat 100% 100%;
+  background-size: 50% 100%;
+  height: auto;
+  margin-right: 6em;
+}
+
+.noParallax {
+  background: #0c0b0b;
+  width: 100%;
+  height: auto;
+  margin-left: 6em;
+}
+
+#seccion1 {
+  background-image: url(img/data/batman.jpg);
+}
+
+#seccion2 {
+  background-image: url(img/data/houseofdragons.jpg);
+}
+
+#seccion3 {
+  background-image: url(img/data/secretsofdumbledore.jpg);
+}
+
+.infoProyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10em;
+  background-color: #0c0b0b;
+  gap: 4em;
+  width: auto;
+  height: auto;
+}
+
+.verMas {
+  font-size: 3.5em;
+  font-style: italic;
+  background-color: #0c0b0b;
+  padding: 0.2em;
+}
+
+.logoBatman,
+.logoSecrets,
+.logoHouse {
+  object-fit: cover;
+  background-color: #0c0b0b;
+  width: 100%;
+}
+
+.letraMas {
+  text-decoration: none;
+  border: solid;
+  padding: 0.2em;
+  transition: background-color 0.1s linear;
+}
+
+.letraMas:hover {
+  color: black;
+  background-color: white;
+}
+
+#verMasProyectos {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 10em;
+}
+
+.verMasProyectosText {
+  font-size: 3em;
+  font-style: italic;
+  padding: 0.2em;
+}
+
+#serviciosCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5em 5em 0 5em;
+  height: 100%;
+}
+
+#tituloServicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+#textoConstruimosTitulo {
+  font-size: 7em;
+  font-style: italic;
+}
+
+.sumaryTitulo {
+  font-size: 5em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  padding: 2em;
+  border-bottom: solid rgb(255, 255, 255, 0.2);
+  transition: border-bottom 0.2s ease;
+  width: 100%;
+}
+
+summary:hover {
+  border-bottom: solid rgb(255, 255, 255);
+}
+
+#servicios {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  gap: 1em;
+  width: auto;
+}
+
+.letrasServicios {
+  object-fit: cover;
+}
+
+.textoServicios {
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  padding: 2em;
+}
+
+#tituloClientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+#bodyy {
+  height: 50%;
+  display: grid;
+  place-items: center;
+  margin: 3em 0 0 0;
+}
+
+#seccionvideo {
+  display: grid;
+  place-items: center;
+  height: auto;
+  margin: 5em 0em 5em 0em;
+  padding: 0 6em 0 6em;
+  gap: 3em;
+}
+
+#sliderr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 4px 30px rgba(255, 254, 254, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.sliderrItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(53%);
+  }
+
+  100% {
+    transform: translateX(-55%);
+  }
+}
+
+.sliderrItems img {
+  max-width: 20%;
+  margin: 20px;
+}
+.sliderrItems img:nth-child(1) {
+  width: 11%;
+}
+.sliderrItems img:nth-child(10) {
+  width: 15%;
+}
+.sliderrItems img:nth-child(11) {
+  width: 7%;
+}
+
+#llamanosCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 3em;
+  width: auto;
+}
+
+#llamanosCont h4 {
+  text-align: center;
+  font-size: 6em;
+  font-style: italic;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+#llamanosCont h3 {
+  text-align: center;
+  font-size: 7em;
+  font-style: italic;
+}
+
+#cdmxCont {
+  width: auto;
+}
+
+#enviaTitulo {
+  font-style: italic;
+  font-size: 3em;
+}
+
+#mailTelefonoCONT {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.5em;
+}
+.correo,
+.WhatsApplink,
+.telefono {
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+  color: rgb(255, 255, 255, 0.8);
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border: solid white;
+  padding: 0.5em;
+}
+
+.linkContacto,
+.linkWa {
+  text-decoration: none;
+}
+
+.correo:hover,
+.telefono:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+.WhatsApplink:hover {
+  color: rgba(56, 212, 35, 0.8);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#arriba {
+  display: flex;
+  align-self: end;
+  justify-self: end;
+  width: 5%;
+  margin: 0 0.3em 0 0.2em;
+}
+#arriba a {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+#arriba img {
+  width: 100%;
+}
+
+#iconosRedesCont {
+  width: 10%;
+  display: flex;
+}
+
+#iconosRedesCont a {
+  width: 100%;
+}
+
+#iconosRedesCont img {
+  width: 100%;
+}
+
+#formularioCont {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+form {
+  width: 80%;
+}
+
+input,
+textarea {
+  font-size: 2em;
+  width: 100%;
+  background-color: black;
+  padding: 0.5em;
+  font-style: italic;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.3s linear;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: white solid 1px;
+}
+
+#contButton {
+  padding: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  display: flex;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 2em;
+  background-color: black;
+  width: 30%;
+  cursor: not-allowed;
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button:enabled {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 1560px) {
+  #enviaTitulo {
+    font-size: 3em;
+  }
+
+  #mailTelefonoCONT {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 0 2em;
+  }
+  nav {
+    padding: 0 3em 0 0;
+  }
+  #titulosNav {
+    gap: 1em;
+  }
+
+  #textoQS {
+    font-size: 1.8em;
+    margin: 0 7em 0 7em;
+  }
+
+  section {
+    width: 100%;
+    height: 60vh;
+  }
+
+  #quienesSomosCOSEC {
+    gap: 4em;
+  }
+
+  .verMas {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 1280px) {
+  #textoQS {
+    font-size: 1.7em;
+    margin: 0 3em 0 3em;
+  }
+  .infoProyecto {
+    margin: 6em;
+  }
+
+  .parallax {
+    background: #0c0b0b fixed no-repeat 100% 100%;
+    background-size: 50% 100%;
+    height: 70vh;
+  }
+  #arriba {
+    width: 8%;
+  }
+  #iconosRedesCont {
+    width: 15%;
+    display: flex;
+  }
+
+  .textoServicios {
+    font-size: 1.5em;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .parallax:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-position: inherit;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-repeat: inherit;
+    position: fixed;
+    top: -1;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-box {
+    width: 100%;
+  }
+  .slider-box img {
+    height: auto;
+  }
+
+  #seccionvideo {
+    padding: 0;
+  }
+
+  #quienesSomosCOSEC {
+    margin: 8em 0 8em 0;
+  }
+
+  #textoTituloQuienes {
+    font-size: 5em;
+  }
+
+  #textoQS {
+    font-size: 1.4em;
+  }
+
+  #textoTituloProyectos {
+    font-size: 5em;
+  }
+  #tituloClientes {
+    font-size: 4em;
+  }
+  #textoConstruimosTitulo {
+    font-size: 5em;
+  }
+
+  #verMasProyectos {
+    justify-content: center;
+  }
+
+  .sumaryTitulo {
+    font-size: 4em;
+  }
+
+  #llamanosCont h3 {
+    font-size: 5em;
+  }
+
+  #enviaTitulo {
+    font-size: 2em;
+  }
+
+  #llamanosCont h4 {
+    font-size: 4em;
+  }
+
+  #mailTelefonoCONT {
+    flex-direction: column-reverse;
+  }
+  .infoProyecto {
+    margin: 2em;
+  }
+  .noParallax {
+    height: auto;
+    margin-left: 0;
+  }
+
+  .parallax {
+    margin-right: 0;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #contButton {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 882px) {
+  .letraMas {
+    font-size: 1em;
+  }
+
+  .verMasProyectosText {
+    font-size: 2.5em;
+  }
+
+  .infoProyecto {
+    padding-top: 5em;
+    gap: 2em;
+  }
+
+  .noparallax {
+    height: 100vh;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .parallax {
+    background-size: 100% 100%;
+  }
+  .infoProyecto {
+    margin: 0em 5em 5em 5em;
+  }
+
+  #quienesSomosCOSEC {
+    margin: 3em 0 0 0;
+  }
+
+  #arriba {
+    width: 10%;
+  }
+  #iconosRedesCont {
+    width: 20%;
+    display: flex;
+  }
+}
+
+@media (max-width: 763px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+  #logoCont {
+    width: 100%;
+    margin: 0 1em 0 0;
+    padding: 0;
+  }
+
+  .verMasProyectosText {
+    font-size: 2em;
+  }
+
+  #verMasProyectos {
+    margin: 5em;
+  }
+  nav {
+    padding: 0em;
+  }
+
+  #textoTituloQuienes {
+    font-size: 4em;
+  }
+
+  #textoQS {
+    font-size: 1.3em;
+  }
+
+  #quienesSomosCOSEC {
+    margin: 3em 0 0 0;
+  }
+
+  #textoTituloProyectos {
+    font-size: 5em;
+  }
+
+  .textoServicios {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 669px) {
+  #textoQS {
+    font-size: 1.1em;
+  }
+
+  #tituloClientes {
+    font-size: 3em;
+  }
+
+  #llamanosCont h4 {
+    font-size: 3em;
+  }
+  .correo,
+  .WhatsApplink,
+  .telefono {
+    font-size: 2.5em;
+  }
+
+  #bodyy {
+    margin: 0em 0 0 0;
+  }
+
+  #arriba {
+    width: 15%;
+  }
+  #iconosRedesCont {
+    width: 30%;
+    display: flex;
+  }
+
+  .textoServicios {
+    font-size: 1.3em;
+  }
+
+  #formularioCont {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 567px) {
+  #textoTituloQuienes {
+    font-size: 3em;
+  }
+  #quienesSomosCOSEC {
+    gap: 1em;
+  }
+  #textoQS {
+    font-size: 1em;
+  }
+
+  #textoTituloProyectos {
+    font-size: 4em;
+  }
+  #verMasProyectos {
+    margin: 3em;
+  }
+
+  .verMasProyectosText {
+    font-size: 2.5em;
+  }
+
+  .letraMas {
+    font-size: 1em;
+  }
+
+  #textoConstruimosTitulo {
+    font-size: 4em;
+  }
+
+  .sumaryTitulo {
+    font-size: 3.5em;
+  }
+
+  #tituloClientes {
+    font-size: 2.5em;
+  }
+
+  #llamanosCont h3 {
+    font-size: 4em;
+  }
+
+  .textoServicios {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 481px) {
+  #textoTituloProyectos {
+    font-size: 3.5em;
+  }
+
+  #textoQS {
+    margin: 0 1em 0 1em;
+  }
+
+  .parallax {
+    background-size: 100% 100%;
+    height: 50vh;
+  }
+
+  #verMasProyectos {
+    margin: 4em;
+  }
+
+  .verMasProyectosText {
+    font-size: 2.2em;
+  }
+
+  .infoProyecto {
+    margin: 0em 4em 4em 4em;
+  }
+
+  #textoConstruimosTitulo {
+    font-size: 3.5em;
+  }
+
+  .parallax {
+    height: 40vh;
+    background-size: 1100px 100%;
+  }
+
+  #seccion1 {
+    background-position: 0%;
+  }
+
+  #seccion2 {
+    background-position: 20%;
+  }
+
+  #seccion3 {
+    background-position: 60%;
+  }
+
+  .letraMas {
+    font-size: 0.9em;
+  }
+  summary {
+    padding: 2em;
+  }
+  #servicios {
+    height: auto;
+  }
+
+  #tituloClientes {
+    font-size: 2em;
+  }
+  #arriba {
+    width: 20%;
+  }
+  #iconosRedesCont {
+    width: 35%;
+  }
+  #quienesSomosCOSEC {
+    gap: 2.5em;
+  }
+
+  .sumaryTitulo {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 453px) {
+  #textoTituloQuienes {
+    font-size: 2.5em;
+  }
+
+  #arriba {
+    width: 20%;
+  }
+  #iconosRedesCont {
+    width: 40%;
+    display: flex;
+  }
+
+  .correo,
+  .WhatsApplink,
+  .telefono {
+    font-size: 2em;
+  }
+
+  .verMasProyectosText {
+    font-size: 1.9em;
+  }
+}
+
+@media (max-width: 400px) {
+  #textoQS {
+    font-size: 1em;
+  }
+
+  #textoTituloProyectos {
+    font-size: 3em;
+  }
+
+  #verMasProyectos {
+    margin: 0;
+    padding-top: 2em;
+  }
+  .verMasProyectosText {
+    font-size: 2.3em;
+  }
+
+  #textoConstruimosTitulo {
+    font-size: 3em;
+  }
+
+  .sumaryTitulo {
+    font-size: 3em;
+  }
+
+  #tituloClientes {
+    font-size: 1.7em;
+  }
+
+  .textoServicios {
+    font-size: 1em;
+  }
+
+  #llamanosCont h3 {
+    font-size: 3em;
+  }
+
+  #enviaTitulo {
+    font-size: 1.5em;
+  }
+
+  #arriba {
+    width: 20%;
+    padding-right: 0.3em;
+  }
+  #iconosRedesCont {
+    width: 40%;
+    display: flex;
+    padding-left: 0.3em;
+  }
+
+  .infoProyecto {
+    margin: 0em 3em 3em 3em;
+  }
+}

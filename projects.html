@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/img/DEAS LOGO.png" type="image/png" />
+    <meta name="language" content="spanish"> 
+    <meta name="copyright" content="Deas">
+    <meta name="author" content="Francisco Garcia">
+    <meta name="audience" content="all">
+    <meta name="description" content="Somos un equipo que ama construir EXPERIENCIAS en el medio publicitario,
+    estamos 100% comprometidos con cada uno de nuestros clientes.">
+    <meta name="keywords" content="construccion experiencias publicidad">
+    <meta name="robots" content="index, all, follow">
+    <meta name="category" content="publicidad construccion escenografia">
+    <link rel="icon" href="/img/DeasLogo.png" type="image/png" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="projectstyle.css" />
   </head>
@@ -11,30 +20,39 @@
     <header>
       <nav>
         <div id="logoCont">
-          <a id="linkLogoDeas" href="https://deas.mx/"
-            ><img id="imgLogo" src="/img/DeasLogo.png" alt="deasLogo"
-          /></a>
+            <a id="linkLogoDeas" href="https://deas.mx/">
+                <img id="imgLogo" src="/img/DeasLogo.png" alt="deasLogo" />
+            </a>
         </div>
-        <ul id="titulosNav">
-          <li>
-            <a class="tituloNav" href="index.html#quienesSomosCOSEC"
-              >¿QUIÉNES SOMOS?</a
-            >
-          </li>
-          <li>
-            <a class="tituloNav" href="index.html#proyectosTituloCo"
-              >+PROYECTOS</a
-            >
-          </li>
-          <li><a class="tituloNav" href="index.html">CONSTRUIMOS</a></li>
-          <li>
-            <a class="tituloNav" id="llamanos" href="#contactoCont"
-              >¡LLÁMANOS!</a
-            >
-          </li>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#ffffff">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="index.html#quienesSomosCOSEC">¿QUIÉNES SOMOS?</a></li>
+            <li><a href="index.html#proyectosTituloCo">+PROYECTOS</a></li>
+            <li><a href="index.html#serviciosCont">CONSTRUIMOS</a></li>
+            <li><a href="#llamanosCont">¡LLÁMANOS!</a></li>
         </ul>
-      </nav>
-    </header>
+        <ul id="titulosNav">
+            <li class="hideOnMobile"><a class="tituloNav" href="#"></a></li>
+            <li class="hideOnMobile"><a class="tituloNav" href="index.html#quienesSomosCOSEC">¿QUIÉNES SOMOS?</a></li>
+            <li class="hideOnMobile"><a class="tituloNav" href="index.html#proyectosTituloCo">+PROYECTOS</a></li>
+            <li class="hideOnMobile"><a class="tituloNav" href="index.html#serviciosCont">CONSTRUIMOS</a></li>
+            <li class="hideOnMobile"><a class="tituloNav" id="llamanos"  href="#llamanosCont">¡LLÁMANOS!</a></li>
+            <li class="menuButton" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#ffffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </header> 
     <main>
       <div id="proyectosTituloCont">
         <h3>+PROYECTOS</h3>
@@ -51,10 +69,7 @@
         <section class="descripcionProyecto" id="batmanDescripcion">
           <h1>Chrunchyroll Expo "CCXP 2024"</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Construimos todo el stand, incluyendo el árbol, ambientación, texturas y acabados.
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -109,10 +124,7 @@
         <section class="descripcionProyecto" id="crunchyrollDescripcion">
           <h1>Chruncyroll Expo "La Mole 2024"</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Construimos todo el stand, iluminación, ambientación, entre otros. 
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -153,10 +165,7 @@
         <section class="descripcionProyecto" id="durangoDescripcion">
           <h1>Durango Expo “Tianguis Turístico 2024”"</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Construimos el stand, así como también la cámara de cine a gran escala, ambientación y mobiliario. 
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -179,10 +188,7 @@
         <section class="descripcionProyecto" id="tajinDescripcion">
           <h1>“Festival Cumbre Tajin 2024”</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Se construyó todo el muro para la fachada de la entrada a la cumbre, textura en piedra y acabados. En Tajin-Veracruz.
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -213,10 +219,7 @@
         <section class="descripcionProyecto" id="tajinDescripcion">
           <h1>Promocional de estreno “Slumberland”</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Se construyeron todas las puertas y se montaron en distintas partes de la CDMX para la promoción de la película “Slumberland”. 
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -250,10 +253,7 @@
         <section class="descripcionProyecto" id="lastofusDescripcion">
           <h1>HBO MAX "The Last Of Us" Promocional</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Construimos y ambientamos el muro y el auto. 
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -281,10 +281,7 @@
         <section class="descripcionProyecto" id="batmanDescripcion">
           <h1>HBO MAX "The Batman"</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Construimos las calles de ciudad gótica, muros, piso, así como también toda la ambientación para llevar a cabo una experiencia para la promoción de Batman en la Roma CDMX.
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -339,10 +336,7 @@
           <section class="descripcionProyecto" id="secretsDescripcion">
             <h1>HBO MAX-"LOS SECRETOS DE DUMBLEDORE"</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-              expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-              nihil est assumenda sint!
+              Ambientamos y construimos toda una experiencia inmersiva zona centro de la CDMX.
             </p>
           </section>
           <section class="contenedorGaleria">
@@ -391,10 +385,7 @@
           <section class="descripcionProyecto" id="secretsDescripcion">
             <h1>FIFA"CHAMPIONS LEAGUE FAN FESTIVAL"</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-              expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-              nihil est assumenda sint!
+              Construimos los diferentes displays para la realización de distintos BTL para la transmisión de la FIFA Champions League. Evento llevado a cabo en la ciudad de Santiago de Querétaro. 
             </p>
           </section>
           <section class="contenedorGaleria">
@@ -448,10 +439,7 @@
           <section class="descripcionProyecto" id="leyendasDescripcion">
             <h1>Amazon Music “La Experiencia Legendaria”</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-              expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-              nihil est assumenda sint!
+              Construimos y ambientamos toda una experiencia para podscast “Leyendas Legendarias” con motivo del día de muertos. 
             </p>
           </section>
           <section class="contenedorGaleria">
@@ -496,15 +484,11 @@
             </div>
           </section>
         </article>
-
-
+        <article>
         <section class="descripcionProyecto" id="OtrosProyectos">
           <h1>Otros Proyectos</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aliquam, soluta blanditiis modi alias ducimus, optio animi dolor
-            expedita veniam incidunt! Recusandae neque laboriosam adipisci nemo,
-            nihil est assumenda sint!
+            Estamos muy felices porque hemos realizado un sin fin de proyectos durante casi 20 años de experiencia, construyendo y ambientando experiencias para diversos promocionales y para diferentes locaciones dentro del país. 
           </p>
         </section>
         <section class="contenedorGaleria">
@@ -567,12 +551,12 @@
         </div>
         <article id="contactoCont">
           <section id="llamanosCont">
-            <img id="llamanosPng" src="img/data/llamanos.png" alt="Llamanos" />
+            <h2>¡LLÁMANOS!</h2>
             <div>
               <h2 id="enviaTitulo">Cuéntanos tu proyecto</h2>
             </div>
             <div id="cdmxCont">
-              <img id="cdmxPng" src="img/data/cdmx.png" alt="cdmx" />
+              <h4>CDMX</h4>
             </div>
             <div id="mailTelefonoCONT">
               <a class="linkContacto" href="tel:5559672195"
@@ -589,7 +573,7 @@
               >
             </div>
             <section id="formularioCont">
-              <form action="#" method="post">
+              <form action="send_email.php" method="post">
                 <div>
                   <label for="nombre"></label>
                   <input

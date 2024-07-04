@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="/img/DEAS LOGO.png" type="image/png" />
-    <title>DEAS</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="language" content="spanish"> 
+    <meta name="copyright" content="Deas">
+    <meta name="author" content="Francisco Garcia">
+    <meta name="audience" content="all">
+    <meta name="description" content="Somos un equipo que ama construir EXPERIENCIAS en el medio publicitario,
+    estamos 100% comprometidos con cada uno de nuestros clientes.">
+    <meta name="keywords" content="construccion experiencias publicidad">
+    <meta name="robots" content="index, all, follow">
+    <meta name="category" content="publicidad construccion escenografia">
+    <link rel="icon" href="/img/DeasLogo.png" type="image/png" />
+    <title>DEAS México | Construimos Experiencias</title>
   </head>
   <body>
     <header>
       <nav>
         <div id="logoCont">
-          <a id="linkLogoDeas" href="https://deas.mx/"
-            ><img id="imgLogo" src="/img/DeasLogo.png" alt="deasLogo"
-          /></a>
+            <a id="linkLogoDeas" href="https://deas.mx/">
+                <img id="imgLogo" src="/img/DeasLogo.png" alt="deasLogo" />
+            </a>
         </div>
-        <ul id="titulosNav">
-          <li>
-            <a class="tituloNav" href="#quienesSomosCOSEC">¿QUIÉNES SOMOS?</a>
-          </li>
-          <li><a class="tituloNav" href="#proyectosTituloCo">+PROYECTOS</a></li>
-          <li><a class="tituloNav" href="#serviciosCont">CONSTRUIMOS</a></li>
-          <li>
-            <a class="tituloNav" id="llamanos" href="#contactoCont"
-              >¡LLÁMANOS!</a
-            >
-          </li>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#ffffff">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="#quienesSomosCOSEC">¿QUIÉNES SOMOS?</a></li>
+            <li><a href="#proyectosTituloCo">+PROYECTOS</a></li>
+            <li><a href="#serviciosCont">CONSTRUIMOS</a></li>
+            <li><a href="#llamanosCont">¡LLÁMANOS!</a></li>
         </ul>
-      </nav>
+        <ul id="titulosNav">
+            <li class="hideOnMobile"><a class="tituloNav" href="#"></a></li>
+            <li class="hideOnMobile"><a class="tituloNav" href="#quienesSomosCOSEC">¿QUIÉNES SOMOS?</a></li>
+            <li class="hideOnMobile"><a class="tituloNav" href="#proyectosTituloCo">+PROYECTOS</a></li>
+            <li class="hideOnMobile"><a class="tituloNav" href="#serviciosCont">CONSTRUIMOS</a></li>
+            <li class="hideOnMobile"><a class="tituloNav" id="llamanos"  href="#llamanosCont">¡LLÁMANOS!</a></li>
+            <li class="menuButton" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#ffffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
     </header>
     <main>
-      <div class="slider">
-        <div class="sliderInner">
-          <img
-            class="imagenPNG"
-            src="img/Mesa de trabajo 1.png"
-            alt="Construimos Experiencias png"
-          />
-          <img
-            class="imagenPNG"
-            src="img/Mesa de trabajo 2.png"
-            alt="Entrega A Tiempo png"
-          />
-          <img
-            class="imagenPNG"
-            src="img/Mesa de trabajo 3.png"
-            alt="Confianza png"
-          />
-          <img
-            class="imagenPNG"
-            src="img/Mesa de trabajo 4.png"
-            alt="Creatividad png"
-          />
-          <img
-            class="imagenPNG"
-            src="img/Mesa de trabajo 5.png"
-            alt="Innovacion png"
-          />
-          <img
-            class="imagenPNG"
-            src="img/Mesa de trabajo 6.png"
-            alt="Experiencia png"
-          />
-        </div>
-      </div>
+      <div class="slider-box">
+        <ul>
+            <li><img src="img/Mesa de trabajo 1.png" alt=""></li>
+            <li><img src="img/Mesa de trabajo 2.png" alt=""></li>
+            <li><img src="img/Mesa de trabajo 3.png" alt=""></li>
+            <li><img src="img/Mesa de trabajo 4.png" alt=""></li>
+            <li><img src="img/Mesa de trabajo 5.png" alt=""></li>
+            <li><img src="img/Mesa de trabajo 6.png" alt=""></li>
+        </ul>
+    </div>
       <article id="quienesSomosCOSEC">
         <section id="quienesSomosImagen">
           <h1 id="textoTituloQuienes">¿QUIÉNES SOMOS?</h1>
@@ -113,9 +113,6 @@
                 src="img/data/logoHouse.png"
                 alt="LogoHouseOfDragons"
               />
-              <h1 class="verMas">
-                <a class="letraMas" href="projects.html">Ver más</a>
-              </h1>
             </div>
           </section>
           <section class="parallax" id="seccion2"></section>
@@ -152,10 +149,7 @@
             </summary>
             <div>
               <p class="textoServicios">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-                dolore, tenetur ex molestiae, maiores corrupti beatae aut nisi
-                aliquam, optio deserunt exercitationem eius nihil voluptates
-                modi sit in unde aspernatur.
+                Hacemos la construcción de cualquier tipo de stand, ambientación, equipo de audio e iluminación, impresión, realización de letras en relieve, ofrecemos un servicio integral para que tu stand sea todo un éxito. 
               </p>
             </div>
           </details>
@@ -165,10 +159,7 @@
             </summary>
             <div>
               <p class="textoServicios">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-                dolore, tenetur ex molestiae, maiores corrupti beatae aut nisi
-                aliquam, optio deserunt exercitationem eius nihil voluptates
-                modi sit in unde aspernatur.
+                Construimos displays para la promoción de cualquier producto o servicio en exposiciones, ferias, eventos masivos, entre otros. 
               </p>
             </div>
           </details>
@@ -178,10 +169,7 @@
             </summary>
             <div>
               <p class="textoServicios">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-                dolore, tenetur ex molestiae, maiores corrupti beatae aut nisi
-                aliquam, optio deserunt exercitationem eius nihil voluptates
-                modi sit in unde aspernatur.
+                Construimos para la realización de eventos BTL, promocionales, photo opportunity, entre otros. 
               </p>
             </div>
           </details>
@@ -189,7 +177,7 @@
       </article>
       <article id="bodyy">
         <section id="seccionvideo">
-          <h1 id="tituloClientes">Hemos trabajado con</h1>
+          <h1 id="tituloClientes">HEMOS TRABAJADO CON:</h1>
           <section id="sliderr">
             <div class="sliderrItems">
               <img src="img/GOMA.png" alt="logoGomaStudios" />
@@ -209,30 +197,31 @@
         </section>
       </article>
       <article id="contactoCont">
-        <section id="llamanosCont">
-          <h2 id="textoLlamanosTitulo">¡LLÁMANOS!</h2>
-          <div>
-            <h2 id="enviaTitulo">Cuéntanos tu proyecto</h2>
-          </div>
-          <div id="cdmxCont">
-            <img id="cdmxPng" src="img/data/cdmx.png" alt="cdmx" />
-          </div>
-          <div id="mailTelefonoCONT">
-            <a class="linkContacto" href="tel:5559672195"
-              ><h2 class="telefono">55-5967-2195</h2></a
-            >
-            <a class="linkContacto" href="tel:+5545666233"
-              ><h2 class="telefono">55-4566-6233</h2></a
-            >
-            <a class="linkContacto" href="mailto:correo@example.com"
-              ><h2 class="correo">contacto@deas.mx</h2></a
-            >
-            <a class="linkWa" href="https://wa.me/+5215610472594"
-              ><h2 class="WhatsApplink">WhatsApp</h2></a
-            >
-          </div>
+        <article id="contactoCont">
+          <section id="llamanosCont">
+            <h3>¡LLÁMANOS!</h3>
+            <div>
+              <h2 id="enviaTitulo">Cuéntanos tu proyecto</h2>
+            </div>
+            <div id="cdmxCont">
+              <h4>CDMX</h4>
+            </div>
+            <div id="mailTelefonoCONT">
+              <a class="linkContacto" href="tel:5559672195"
+                ><h2 class="telefono">55-5967-2195</h2></a
+              >
+              <a class="linkContacto" href="tel:+5545666233"
+                ><h2 class="telefono">55-4566-6233</h2></a
+              >
+              <a class="linkContacto" href="mailto:correo@example.com"
+                ><h2 class="correo">contacto@deas.mx</h2></a
+              >
+              <a class="linkWa" href="https://wa.me/+5215610472594"
+                ><h2 class="WhatsApplink">WhatsApp</h2></a
+              >
+            </div>
           <section id="formularioCont">
-            <form action="#" method="post">
+            <form action="send_email.php" method="post">
               <div>
                 <label for="nombre"></label>
                 <input
@@ -261,6 +250,7 @@
                   name="telefono"
                   placeholder="Teléfono"
                   pattern="[0-9+()-]*"
+                  maxlength="10"
                   required
                 />
               </div>
