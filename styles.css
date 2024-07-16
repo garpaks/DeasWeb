@@ -307,6 +307,10 @@ section {
   background-image: url(img/data/secretsofdumbledore.jpg);
 }
 
+#seccion4 {
+  background-image: url(img/CCXP1.jpg);
+}
+
 .infoProyecto {
   display: flex;
   flex-direction: column;
@@ -328,7 +332,8 @@ section {
 
 .logoBatman,
 .logoSecrets,
-.logoHouse {
+.logoHouse,
+.logoCr {
   object-fit: cover;
   background-color: #0c0b0b;
   width: 100%;
@@ -721,22 +726,6 @@ button:hover {
   }
 }
 
-@media all and (max-width: 1024px) {
-  .parallax:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-position: inherit;
-    background-image: inherit;
-    background-size: inherit;
-    background-attachment: inherit;
-    background-repeat: inherit;
-    position: fixed;
-    top: -1;
-    z-index: -1;
-  }
-}
-
 @media (max-width: 992px) {
   .slider-box {
     width: 100%;
@@ -806,6 +795,10 @@ button:hover {
     margin-right: 0;
   }
 
+  #seccion4 {
+    background-position: -100%;
+  }
+
   button {
     width: 100%;
   }
@@ -813,198 +806,212 @@ button:hover {
   #contButton {
     justify-content: center;
   }
-}
-
-@media (max-width: 882px) {
-  .letraMas {
-    font-size: 1em;
+  @supports (-webkit-touch-callout: inherit) {
+    .parallax {
+      display: none;
+      background-attachment: scroll;
+    }
+    .verMas {
+      display: none;
+    }
   }
 
-  .verMasProyectosText {
-    font-size: 2.5em;
+  @media (max-width: 882px) {
+    .letraMas {
+      font-size: 1em;
+    }
+
+    .verMasProyectosText {
+      font-size: 2.5em;
+    }
+
+    .infoProyecto {
+      padding-top: 5em;
+      gap: 2em;
+    }
+
+    .noparallax {
+      height: 100vh;
+    }
+
+    #seccion4 {
+      background-position: 40%;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .parallax {
+      background-size: 100% 100%;
+    }
+    .infoProyecto {
+      margin: 0em 5em 5em 5em;
+    }
+
+    #quienesSomosCOSEC {
+      margin: 3em 0 0 0;
+    }
+
+    #arriba {
+      width: 10%;
+    }
+    #iconosRedesCont {
+      width: 20%;
+      display: flex;
+    }
   }
 
-  .infoProyecto {
-    padding-top: 5em;
-    gap: 2em;
+  @media (max-width: 763px) {
+    .hideOnMobile {
+      display: none;
+    }
+    .menuButton {
+      display: block;
+    }
+
+    .sidebar {
+      width: 100%;
+    }
+    #logoCont {
+      width: 100%;
+      margin: 0 1em 0 0;
+      padding: 0;
+    }
+
+    .verMasProyectosText {
+      font-size: 2em;
+    }
+
+    #verMasProyectos {
+      margin: 5em;
+    }
+    nav {
+      padding: 0em;
+    }
+
+    #textoTituloQuienes {
+      font-size: 4em;
+    }
+
+    #textoQS {
+      font-size: 1.3em;
+    }
+
+    #quienesSomosCOSEC {
+      margin: 3em 0 0 0;
+    }
+
+    #textoTituloProyectos {
+      font-size: 5em;
+    }
+
+    .textoServicios {
+      font-size: 1.5em;
+    }
   }
 
-  .noparallax {
-    height: 100vh;
+  @media (max-width: 669px) {
+    #textoQS {
+      font-size: 1.1em;
+    }
+
+    #tituloClientes {
+      font-size: 3em;
+    }
+
+    #llamanosCont h4 {
+      font-size: 3em;
+    }
+    .correo,
+    .WhatsApplink,
+    .telefono {
+      font-size: 2.5em;
+    }
+
+    #bodyy {
+      margin: 0em 0 0 0;
+    }
+
+    #arriba {
+      width: 15%;
+    }
+    #iconosRedesCont {
+      width: 30%;
+      display: flex;
+    }
+
+    .textoServicios {
+      font-size: 1.3em;
+    }
+
+    #formularioCont {
+      width: 100vw;
+    }
   }
 
-  .row {
-    display: flex;
-    flex-direction: column-reverse;
+  @media (max-width: 567px) {
+    #textoTituloQuienes {
+      font-size: 3em;
+    }
+    #quienesSomosCOSEC {
+      gap: 1em;
+    }
+    #textoQS {
+      font-size: 1em;
+    }
+
+    #textoTituloProyectos {
+      font-size: 4em;
+    }
+    #verMasProyectos {
+      margin: 3em;
+    }
+
+    .verMasProyectosText {
+      font-size: 2.5em;
+    }
+
+    .letraMas {
+      font-size: 1em;
+    }
+
+    #textoConstruimosTitulo {
+      font-size: 4em;
+    }
+
+    .sumaryTitulo {
+      font-size: 3.5em;
+    }
+
+    #tituloClientes {
+      font-size: 2.5em;
+    }
+
+    #llamanosCont h3 {
+      font-size: 4em;
+    }
+
+    .textoServicios {
+      font-size: 1.2em;
+    }
   }
 
-  .parallax {
-    background-size: 100% 100%;
-  }
-  .infoProyecto {
-    margin: 0em 5em 5em 5em;
-  }
+  @media (max-width: 481px) {
+    #textoTituloProyectos {
+      font-size: 3.5em;
+    }
 
-  #quienesSomosCOSEC {
-    margin: 3em 0 0 0;
-  }
+    #textoQS {
+      margin: 0 1em 0 1em;
+    }
 
-  #arriba {
-    width: 10%;
-  }
-  #iconosRedesCont {
-    width: 20%;
-    display: flex;
-  }
-}
-
-@media (max-width: 763px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menuButton {
-    display: block;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
-  #logoCont {
-    width: 100%;
-    margin: 0 1em 0 0;
-    padding: 0;
-  }
-
-  .verMasProyectosText {
-    font-size: 2em;
-  }
-
-  #verMasProyectos {
-    margin: 5em;
-  }
-  nav {
-    padding: 0em;
-  }
-
-  #textoTituloQuienes {
-    font-size: 4em;
-  }
-
-  #textoQS {
-    font-size: 1.3em;
-  }
-
-  #quienesSomosCOSEC {
-    margin: 3em 0 0 0;
-  }
-
-  #textoTituloProyectos {
-    font-size: 5em;
-  }
-
-  .textoServicios {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 669px) {
-  #textoQS {
-    font-size: 1.1em;
-  }
-
-  #tituloClientes {
-    font-size: 3em;
-  }
-
-  #llamanosCont h4 {
-    font-size: 3em;
-  }
-  .correo,
-  .WhatsApplink,
-  .telefono {
-    font-size: 2.5em;
-  }
-
-  #bodyy {
-    margin: 0em 0 0 0;
-  }
-
-  #arriba {
-    width: 15%;
-  }
-  #iconosRedesCont {
-    width: 30%;
-    display: flex;
-  }
-
-  .textoServicios {
-    font-size: 1.3em;
-  }
-
-  #formularioCont {
-    width: 100vw;
-  }
-}
-
-@media (max-width: 567px) {
-  #textoTituloQuienes {
-    font-size: 3em;
-  }
-  #quienesSomosCOSEC {
-    gap: 1em;
-  }
-  #textoQS {
-    font-size: 1em;
-  }
-
-  #textoTituloProyectos {
-    font-size: 4em;
-  }
-  #verMasProyectos {
-    margin: 3em;
-  }
-
-  .verMasProyectosText {
-    font-size: 2.5em;
-  }
-
-  .letraMas {
-    font-size: 1em;
-  }
-
-  #textoConstruimosTitulo {
-    font-size: 4em;
-  }
-
-  .sumaryTitulo {
-    font-size: 3.5em;
-  }
-
-  #tituloClientes {
-    font-size: 2.5em;
-  }
-
-  #llamanosCont h3 {
-    font-size: 4em;
-  }
-
-  .textoServicios {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 481px) {
-  #textoTituloProyectos {
-    font-size: 3.5em;
-  }
-
-  #textoQS {
-    margin: 0 1em 0 1em;
-  }
-
-  .parallax {
-    background-size: 100% 100%;
-    height: 50vh;
+    .parallax {
+      background-size: 100% 100%;
+      height: 50vh;
+      background-attachment: fixed;
+    }
   }
 
   #verMasProyectos {
