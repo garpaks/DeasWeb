@@ -275,6 +275,11 @@ h4 {
   font-style: italic;
   opacity: 0.5;
 }
+h5 {
+  font-size: 3em;
+  text-align: center;
+  padding: 1.5em 0 0em 0;
+}
 
 p {
   font-size: 2.5em;
@@ -484,6 +489,10 @@ button:hover {
   button {
     width: 100%;
   }
+
+  h5 {
+    font-size: 2.5em;
+  }
   #iconosRedesCont {
     width: 15%;
   }
@@ -528,6 +537,9 @@ button:hover {
   h2 {
     font-size: 7em;
   }
+  h5 {
+    font-size: 2em;
+  }
   h4 {
     font-size: 5em;
   }
@@ -560,6 +572,9 @@ button:hover {
   }
   h4 {
     font-size: 4.5em;
+  }
+  h5 {
+    font-size: 1.8em;
   }
   h1 {
     font-size: 2.5em;
@@ -641,6 +656,9 @@ button:hover {
   h4 {
     font-size: 4em;
   }
+  h5 {
+    font-size: 1.5em;
+  }
   h1 {
     font-size: 2.5em;
   }
@@ -669,6 +687,9 @@ button:hover {
   }
   h4 {
     font-size: 4em;
+  }
+  h5 {
+    font-size: 1.4em;
   }
   h1 {
     font-size: 2.3em;
@@ -707,6 +728,9 @@ button:hover {
   }
   h4 {
     font-size: 4em;
+  }
+  h5 {
+    font-size: 1.2em;
   }
   h1 {
     font-size: 2em;
@@ -790,6 +814,9 @@ button:hover {
   }
   h1 {
     font-size: 2.5em;
+  }
+  h5 {
+    font-size: 1.2em;
   }
   h2 {
     font-size: 3.5em;

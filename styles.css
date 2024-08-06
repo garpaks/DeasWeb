@@ -189,7 +189,7 @@ li {
 }
 
 #textoTituloQuienes {
-  font-size: 7em;
+  font-size: 4.5em;
   font-style: italic;
   text-align: center;
 }
@@ -321,6 +321,10 @@ section {
   gap: 4em;
   width: auto;
   height: auto;
+}
+
+.titulosProyectos {
+  text-align: center;
 }
 
 .verMas {
@@ -743,7 +747,7 @@ button:hover {
   }
 
   #textoTituloQuienes {
-    font-size: 5em;
+    font-size: 3.5em;
   }
 
   #textoQS {
@@ -825,6 +829,10 @@ button:hover {
       font-size: 2.5em;
     }
 
+    #textoTituloQuienes {
+      font-size: 3em;
+    }
+
     .infoProyecto {
       padding-top: 5em;
       gap: 2em;
@@ -890,11 +898,9 @@ button:hover {
     nav {
       padding: 0em;
     }
-
     #textoTituloQuienes {
-      font-size: 4em;
+      font-size: 3.5em;
     }
-
     #textoQS {
       font-size: 1.3em;
     }
@@ -949,6 +955,10 @@ button:hover {
     #formularioCont {
       width: 100vw;
     }
+
+    #textoTituloQuienes {
+      font-size: 3em;
+    }
   }
 
   @media (max-width: 567px) {
@@ -962,8 +972,9 @@ button:hover {
       font-size: 1em;
     }
 
-    #textoTituloProyectos {
-      font-size: 4em;
+    #textoTituloQuienes {
+      font-size: 2.5em;
+      padding: 0 0.5em 0 0.5em;
     }
     #verMasProyectos {
       margin: 3em;
@@ -1000,7 +1011,7 @@ button:hover {
 
   @media (max-width: 481px) {
     #textoTituloProyectos {
-      font-size: 3.5em;
+      font-size: 2em;
     }
 
     #textoQS {
@@ -1016,6 +1027,9 @@ button:hover {
 
   #verMasProyectos {
     margin: 4em;
+  }
+  #textoTituloQuienes {
+    font-size: 2em;
   }
 
   .verMasProyectosText {
@@ -1077,7 +1091,7 @@ button:hover {
 
 @media (max-width: 453px) {
   #textoTituloQuienes {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   #arriba {
